@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Passbook</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="app-container">
+
+<header class="header">
+
+<h1>Passbook</h1>
+
+<p class="subtitle">All Transactions</p>
+
+</header>
+
+
+<!-- FILTER SECTION -->
+
+<div class="filter-box">
+
+<input 
+type="date" 
+id="startDate"
+>
+
+<input 
+type="date" 
+id="endDate"
+>
+
+<button onclick="applyFilter()">
+Filter
+</button>
+
+</div>
+
+
+<!-- TRANSACTION LIST -->
+
+<div 
+id="passbookList" 
+class="transaction-list"
+>
+
+</div>
+
+
+<!-- BACK BUTTON -->
+
+<a href="../index.html">
+
+<button class="secondary-btn">
+
+Back to Dashboard
+
+</button>
+
+</a>
+
+</div>
+
+
+<script type="module" src="../js/passbook.js"></script>
+
+</body>
+</html>

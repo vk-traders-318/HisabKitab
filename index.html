@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dukaan Ledger Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="app-container">
+
+<header class="header">
+
+<h1>Dukaan Ledger</h1>
+
+<p class="subtitle">Daily Shop Accounting</p>
+
+</header>
+
+
+<section class="balance-section">
+
+<div class="balance-card cash-card">
+
+<h3>Cash Balance</h3>
+
+<p id="cashBalance">₹0</p>
+
+</div>
+
+<div class="balance-card online-card">
+
+<h3>Online Balance</h3>
+
+<p id="onlineBalance">₹0</p>
+
+</div>
+
+</section>
+
+
+<section class="total-section">
+
+<div class="total-card">
+
+<h2>Total Balance</h2>
+
+<p id="totalBalance">₹0</p>
+
+</div>
+
+</section>
+
+
+<section class="action-section">
+
+<a href="pages/add-sale.html">
+
+<button class="primary-btn">
+Add Sale
+</button>
+
+</a>
+
+
+<a href="pages/add-expense.html">
+
+<button class="danger-btn">
+Add Expense
+</button>
+
+</a>
+
+
+<a href="pages/passbook.html">
+
+<button class="secondary-btn">
+View Passbook
+</button>
+
+</a>
+
+</section>
+
+
+<section class="recent-section">
+
+<h2>Recent Transactions</h2>
+
+<div id="recentTransactions" class="transaction-list"></div>
+
+</section>
+
+</div>
+
+
+<!-- Dashboard Logic -->
+
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>

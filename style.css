@@ -1,0 +1,312 @@
+/* =========================
+GLOBAL SETTINGS
+========================= */
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f3f5f9;
+color:#333;
+}
+
+.app-container{
+max-width:500px;
+margin:auto;
+padding:16px;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+.header{
+text-align:center;
+margin-bottom:20px;
+}
+
+.header h1{
+font-size:26px;
+font-weight:600;
+}
+
+.subtitle{
+font-size:13px;
+color:#777;
+margin-top:3px;
+}
+
+
+/* =========================
+BALANCE CARDS
+========================= */
+
+.balance-section{
+display:flex;
+gap:12px;
+margin-bottom:15px;
+}
+
+.balance-card{
+flex:1;
+background:white;
+padding:16px;
+border-radius:14px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.balance-card h3{
+font-size:14px;
+color:#777;
+margin-bottom:6px;
+}
+
+.balance-card p{
+font-size:22px;
+font-weight:600;
+}
+
+.cash-card{
+border-left:4px solid #4caf50;
+}
+
+.online-card{
+border-left:4px solid #2196f3;
+}
+
+
+/* =========================
+TOTAL BALANCE
+========================= */
+
+.total-section{
+margin-bottom:18px;
+}
+
+.total-card{
+background:#4caf50;
+color:white;
+padding:18px;
+border-radius:14px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.total-card h2{
+font-size:16px;
+}
+
+.total-card p{
+font-size:26px;
+font-weight:600;
+margin-top:5px;
+}
+
+
+/* =========================
+ACTION BUTTONS
+========================= */
+
+.action-section{
+display:flex;
+flex-direction:column;
+gap:10px;
+margin-bottom:20px;
+}
+
+button{
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+font-size:15px;
+font-weight:500;
+cursor:pointer;
+transition:0.2s;
+}
+
+button:active{
+transform:scale(.97);
+}
+
+.primary-btn{
+background:#2196f3;
+color:white;
+}
+
+.primary-btn:hover{
+background:#1976d2;
+}
+
+.danger-btn{
+background:#f44336;
+color:white;
+}
+
+.danger-btn:hover{
+background:#d32f2f;
+}
+
+.secondary-btn{
+background:#444;
+color:white;
+}
+
+.secondary-btn:hover{
+background:#222;
+}
+
+
+/* =========================
+RECENT TRANSACTIONS
+========================= */
+
+.recent-section h2{
+font-size:18px;
+margin-bottom:10px;
+}
+
+.transaction-list{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.transaction{
+background:white;
+padding:14px;
+border-radius:12px;
+box-shadow:0 3px 8px rgba(0,0,0,0.08);
+}
+
+.transaction-header{
+display:flex;
+justify-content:space-between;
+font-weight:600;
+}
+
+.transaction-type{
+font-size:14px;
+}
+
+.transaction-amount{
+font-size:15px;
+}
+
+.amount-plus{
+color:#2e7d32;
+font-weight:600;
+}
+
+.amount-minus{
+color:#d32f2f;
+font-weight:600;
+}
+
+.transaction-meta{
+font-size:12px;
+color:#777;
+margin-top:4px;
+}
+
+
+/* =========================
+FORM UI
+========================= */
+
+.form-container{
+background:white;
+padding:18px;
+border-radius:14px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.form-container h2{
+margin-bottom:10px;
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+border-radius:10px;
+border:1px solid #ddd;
+font-size:14px;
+margin-top:8px;
+margin-bottom:12px;
+}
+
+textarea{
+resize:none;
+}
+
+label{
+font-size:13px;
+color:#555;
+}
+
+
+/* =========================
+FILTERS (PASSBOOK)
+========================= */
+
+.filter-box{
+display:flex;
+gap:10px;
+margin-bottom:12px;
+}
+
+.filter-box input{
+flex:1;
+}
+
+.filter-box button{
+flex:1;
+}
+
+
+/* =========================
+PASSBOOK ITEMS
+========================= */
+
+.passbook-item{
+background:white;
+padding:14px;
+border-radius:12px;
+box-shadow:0 3px 8px rgba(0,0,0,0.08);
+margin-bottom:10px;
+}
+
+.passbook-row{
+display:flex;
+justify-content:space-between;
+font-weight:500;
+}
+
+.passbook-meta{
+font-size:12px;
+color:#777;
+margin-top:4px;
+}
+
+
+/* =========================
+MOBILE OPTIMIZATION
+========================= */
+
+@media(max-width:480px){
+
+.balance-card p{
+font-size:20px;
+}
+
+.total-card p{
+font-size:24px;
+}
+
+}
